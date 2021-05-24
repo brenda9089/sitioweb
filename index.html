@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel la Floresta</title>
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding:0px;
+
+}
+      body {
+  background: #F9F8FD;
+  font-family: 'Lexend Exa', sans-serif;
+}
+body {
+  font-family: 'Courier', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+small {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+/* By Dominik Biedebach @domobch */
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #000;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+body{
+	background: #FAF6F6;
+	color: white;
+
+}
+div {
+	width: 960px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border-radius: 30px;
+	overflow: hidden;
+
+}
+header {
+	height: 150px;
+	background: #000;
+
+}
+header h1 {
+	font-size: 50px;
+	text-align: center;
+	line-height: 150px;
+}
+nav {
+	background: #FCB5B5;
+	height: 60px;
+
+}
+nav h2{
+	text-align: center;
+	font-size: 40px
+	line-height: 60px;
+}
+section {
+	width: 700px;
+	height: 450px;
+	float: left;
+	background:  #CF8E80 ;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	
+}
+
+article h2 {
+	text-align: center;
+	font-size: 40px
+	line-height: 500px;
+
+}
+aside {
+	width:250px;
+	height: 450px;
+	background: #E6A29B;
+	margin-top: 10px;
+	float: right;
+}
+aside h2{
+	text-align: center;
+	font-size: 40px
+	line-height: 500px;
+}
+footer {
+	background: #000;
+	clear:both;
+
+}
+footer h2{
+	text-align: center;
+	font-size: 40px
+	padding:20px;
+	font-style: italic;
+}
+
+.container{
+  margin: auto;
+  background-color: white;
+  width: 600px;
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 600px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+	</style>
+
+</head>
+<body>
+	<div id="Contenedor"> 
+		<header> 
+			<h1> LA FLORESTA - HOTEL</h1>
+		</header>
+		<nav class="stroke">
+    <ul>
+      <li><a href="#">INICIO</a></li>
+      <li><a href="#">GALERIA </a></li>
+      <li><a href="#">RESERVACIONES</a></li>
+      <li><a href="#">UBICACION</a></li>
+      
+    </ul>
+  </nav>
+		<section id="Contenido">
+			<article>
+				<div class="container">
+  
+  <ul class="slider">
+    <li id="slide1">
+      <img src="IMAGENES\Hotel.JPG"/>
+    </li>
+    <li id="slide2">
+      <img src="IMAGENES\la floresta.JPG"/>
+    </li>
+    <li id="slide3">
+    	<img src="IMAGENES\imagen3.JPG"/>
+    </li>
+    <li id="slide4">
+    	<img src="IMAGENES\imagen2.JPG"/>
+    </li>
+    <li id="slide5">
+    	<img src="IMAGENES\bebida.JPG"/>
+    </li>
+  </ul>
+  
+  <ul class="menu">
+    <li>
+      <a href="#slide1">1</a>
+    </li>
+    <li>
+      <a href="#slide2">2</a>
+    </li>
+     <li>
+      <a href="#slide3">3</a>
+    </li>
+    <li>
+      <a href="#slide4">4</a>
+    </li>
+    <li>
+      <a href="#slide5">5</a>
+    </li>
+  </ul>
+  
+</div>
+			 </article>
+		</section>
+		<aside>
+			<h2 align="center">Restaurante <br> <br> <br> <br> <br><img src="IMAGENES\restaurantE.jpg" width="240"  height="200"  > <h2>
+		</aside>
+		<footer> 
+			<h2>Corner Juan Montalvo and, Thomas Halflants, Baños de Agua Santa- Brenda Abad</h2>
+		</footer>
+
+	</div>
+
+
+</body>
+</html>
